@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --darkSlateGray: #404f6b;
+  --darkGray: #9fa8b6;
+  --white: #ffff;
+}
+
+body {
+  line-height: 1.4;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  max-height: 100%;
+}
+.hero-picture {
+  height: 100vh;
+  background: url(/img/hero-area.jpg) center/cover no-repeat;
+  background-color: var(--darkSlateGray);
+}
+
+.navbar {
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  list-style: none;
+  margin-right: 1.5em;
+}
+.nav-links li {
+  color: var(--white);
+}
+a:visited {
+  color: inherit;
+}
+
+.nav-links ul {
+  display: flex;
+}
