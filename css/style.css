@@ -113,8 +113,64 @@ a:visited {
   margin-left: 6em;
   margin-top: -35px;
 }
-
+/*------ carousel section ---------*/
 .carousel {
   background-color: var(--darkSlateGray);
-  padding: 3em;
+  padding: 1em;
+  position: relative;
+  height: 30vh;
+  margin: 0 auto;
+
+  /* width: 100vh; */
+}
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.carousel__image {
+  min-width: 325px;
+  display: inline;
+  /* width: 100%; */
+}
+
+.carousel__track {
+  list-style: none;
+}
+
+.carousel__slide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+.carousel__button {
+  position: absolute;
+  top: 35%;
+  /* transform: translateY(-50%); */
+  background: transparent;
+  border: 0;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+.carousel__button--left {
+  left: -8px;
+}
+
+.carousel__button--right {
+  left: 350px;
+}
+.carousel__nav {
+  top: 225px;
+  position: absolute;
+  left: 150px;
+}
+.carousel__indicator {
+  padding: 0.25em;
+  border-radius: 50%;
+  background: var(--white);
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+  margin-right: 0.35em;
 }
