@@ -8,10 +8,13 @@
   --darkSlateGray: #404f6b;
   --darkGray: #9fa8b6;
   --white: #ffff;
+  --black: rgb(0, 0, 0);
 }
 
 body {
   line-height: 1.4;
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
 }
 img {
   max-width: 100%;
@@ -19,6 +22,8 @@ img {
   display: block;
   max-height: 100%;
 }
+
+/***************** hero section *************************/
 .hero-picture {
   height: 100vh;
   background: url(/img/hero-area.jpg) center/cover no-repeat;
@@ -33,7 +38,8 @@ img {
 }
 
 .nav-links a {
-  text-decoration: none;
+  /* text-decoration: none; */
+  text-decoration-color: var(--white);
   list-style: none;
   margin-right: 1.5em;
 }
@@ -46,4 +52,35 @@ a:visited {
 
 .nav-links ul {
   display: flex;
+}
+
+/*********************** history section ********************/
+
+#history-links a {
+  text-decoration-color: var(--darkSlateGray);
+}
+#history-links li {
+  color: var(--darkSlateGray);
+}
+.logo-text {
+  display: inline-block;
+}
+.history-img {
+  display: unset;
+}
+#history-logo {
+  text-decoration: none;
+}
+.logo-text {
+  margin-left: 0.25em;
+}
+.losAngeles {
+  color: var(--darkGray);
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.mountains {
+  color: var(--darkSlateGray);
+  letter-spacing: 2.25px;
+  line-height: 0.75;
 }
