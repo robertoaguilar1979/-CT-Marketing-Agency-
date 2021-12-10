@@ -244,3 +244,26 @@ a:visited {
   display: inline-block;
   margin-left: 3em;
 }
+
+footer {
+  background-color: var(--darkSlateGray);
+  padding: 2em;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .losAngeles,
+footer .mountains {
+  color: rgba(255, 255, 255, 0.205);
+}
+.logo-container .history-img {
+  color: rgba(255, 255, 255, 0.205);
+}
+footer p {
+  color: rgba(255, 255, 255, 0.205);
+}
