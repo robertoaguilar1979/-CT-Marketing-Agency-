@@ -1,3 +1,6 @@
+// link to referance link 
+// https://www.youtube.com/watch?v=XtFlpgaLbZ4
+
 document.querySelectorAll(".carousel").forEach((carousel) => {
     const items = carousel.querySelectorAll(".carousel__item");
     const buttonsHtml = Array.from(items, () => {
@@ -34,3 +37,24 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     items[0].classList.add("carousel__item--selected");
     buttons[0].classList.add("carousel__button--selected");
 });
+
+
+// tabs section javascript
+
+const tabs = document.querySelectorAll("[data-tab-target]");
+const tabContents = document.querySelectorAll("[data-tab-content]");
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove("active")
+        })
+
+
+        target.classList.add("active");
+
+
+    })
+})
