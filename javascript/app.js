@@ -1,4 +1,5 @@
 // link to referance link 
+// on how I build the carousel area
 // https://www.youtube.com/watch?v=XtFlpgaLbZ4
 
 document.querySelectorAll(".carousel").forEach((carousel) => {
@@ -38,6 +39,8 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     buttons[0].classList.add("carousel__button--selected");
 });
 
+//reference to how I build the tabs area
+//https://www.youtube.com/watch?v=5L6h_MrNvsk&t=480s
 
 // tabs section javascript
 

@@ -267,3 +267,52 @@ footer .mountains {
 footer p {
   color: rgba(255, 255, 255, 0.205);
 }
+
+@media (max-width: 810px) {
+  .climb-nav {
+    padding-right: unset;
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-container,
+  .main-logo {
+    margin-bottom: 1em;
+  }
+  .history-hero-text,
+  .climb-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .history-hero-text h1,
+  .climb-hero-text h1 {
+    font-size: 6rem;
+    position: static;
+  }
+  .history-hero-text span,
+  .climb-hero-text span {
+    top: unset;
+    left: unset;
+    display: block;
+  }
+  .history-hero-text p,
+  .climb-hero-text p {
+    margin-left: unset;
+    margin-top: unset;
+    position: static;
+    display: block;
+    margin-top: 5em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
